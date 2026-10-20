@@ -36,9 +36,9 @@ Gate: anon tidak bisa membaca order/PII/asset; satu admin terprovisi full access
 
 - [ ] CRUD kategori, produk, varian, media, asset privat
 - [ ] Publish validation seller + WA + QRIS
-- [ ] Home, catalog, search/filter/sort/pagination, product detail
-- [ ] Metadata, canonical, OG, JSON-LD aman
-- [ ] Empty/loading/error/accessibility states
+- [ ] Home, catalog, search/filter/sort/pagination, product detail (list + detail DB-backed selesai; search/filter/sort/pagination belum)
+- [ ] Metadata, canonical, OG, JSON-LD aman (title/description/canonical selesai; OG/JSON-LD belum)
+- [ ] Empty/loading/error/accessibility states (empty catalog selesai; loading/error review belum)
 
 Gate: publish admin menghasilkan product publik dari DB; draft tetap privat.
 

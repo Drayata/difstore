@@ -5,7 +5,7 @@ Status: fase 1 berjalan. `Planned` berarti belum diimplementasikan atau belum di
 | AC | Fase | Target file/modul | Test/bukti | Status |
 |---|---:|---|---|---|
 | AC-01 | 2/6 | `src/app/page.tsx`, store UI | `tests/e2e/home.spec.ts` mobile passed; full viewport matrix pending | Partial |
-| AC-02–04 | 2 | catalog admin/public services | catalog integration + Playwright | Planned |
+| AC-02–04 | 2 | `src/server/repositories/catalog.ts`, `src/app/products/*`; admin CRUD/search/filter/sort pending | catalog integration + Playwright pending | Partial |
 | AC-05–06 | 3 | cart + quote | cart unit/E2E price-change | Planned |
 | AC-07–09 | 3 | checkout RPC | DB integration single/mixed seller | Planned |
 | AC-10–12 | 3 | checkout RPC/idempotency | replay/unpublish/rollback tests | Planned |

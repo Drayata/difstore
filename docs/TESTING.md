@@ -33,3 +33,14 @@ Cloudflare remote checks tetap terblokir sampai credentials tersedia. Belum ada 
 | `npx supabase test db --linked supabase/tests/rls_phase1.test.sql` | Belum jalan: CLI mencoba Docker tetapi akses `/var/run/docker.sock` ditolak |
 
 Push membuat schema inti, constraints, RLS, minimal grants, public safe views, bucket preview publik, bucket asset privat, dan bucket QRIS privat. `SECURITY DEFINER` admin helper sudah dipindah dari exposed `public` ke schema `private`; advisor warning RPC hilang. Satu akun admin nyata terdeteksi. Belum ada seed, order, produk, atau data demo. Gate fase 1 belum lulus sampai SQL RLS tests dan penolakan user non-admin diuji.
+
+## Audit lanjutan — 20 Oktober 2026
+
+| Command | Hasil aktual |
+|---|---|
+| `npm ci` | Lulus, 549 package terpasang |
+| `npm run check` | Lulus: lint, typecheck, 2 file / 4 unit tests, production build |
+| `npm audit --omit=dev` | Lulus, 0 vulnerability produksi |
+| `npm run test:e2e -- --reporter=list` | Awalnya terblokir karena browser belum terpasang; setelah `npx playwright install chromium`, lulus 1 mobile Chromium test |
+
+Katalog list/detail kini membaca produk published melalui RLS Supabase. Integrasi katalog DB belum bisa diklaim lulus tanpa data staging yang dikendalikan.

@@ -11,8 +11,8 @@ export default function HomePage() {
         Pilih produk, buat pesanan tanpa akun, hubungi admin melalui WhatsApp, lalu bayar memakai QRIS statis yang sesuai pemilik produk.
       </p>
       <div className="mt-10 flex flex-wrap gap-3">
-        <Link className="min-h-11 rounded-xl bg-[var(--color-primary)] px-6 py-3 font-semibold text-white" href="/products/poc-product">
-          Lihat produk PoC
+        <Link className="min-h-11 rounded-xl bg-[var(--color-primary)] px-6 py-3 font-semibold text-white" href="/products">
+          Jelajahi Produk
         </Link>
         <Link className="min-h-11 rounded-xl border border-[var(--color-border)] bg-white px-6 py-3 font-semibold" href="/admin/login">
           Login admin
